@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)file:///C:/Users/hp/Downloads/sketchmath_5.html -->
+<!-- saved from url=(0047)file:///C:/Users/hp/Downloads/sketchmath_6.html -->
 <html lang="tr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -126,6 +126,53 @@
       footer { flex-direction: column; gap: 0.75rem; text-align: center; }
     }
 
+
+    /* ── DESTEKÇILER YENİ ── */
+    .supporters-grid-new {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .supporter-card-new {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 2rem 1.8rem;
+      transition: background 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .supporter-card-new::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--sky));
+    }
+    .supporter-card-new:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-4px);
+    }
+    .supporter-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .supporter-name-new {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+    .supporter-type-new {
+      font-size: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
     /* ── SSS ── */
     #sss { background: var(--white); }
     .faq-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
@@ -165,25 +212,37 @@
 <body>
 
 <nav>
-  <a class="nav-brand" href="file:///C:/Users/hp/Downloads/sketchmath_5.html#hero">Sketch<span>Math</span></a>
+  <a class="nav-brand" href="file:///C:/Users/hp/Downloads/sketchmath_6.html#hero">Sketch<span>Math</span></a>
   <ul class="nav-links">
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#destekcilar">Destekçiler</a></li>
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#hakkimizda">Hakkımızda</a></li>
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#ozellikler">Özellikler</a></li>
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#ekibimiz">Ekibimiz</a></li>
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#sss">SSS</a></li>
-    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_5.html#iletisim">İletişim</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#destekcilar">Destekçiler</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#hakkimizda">Hakkımızda</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#ozellikler">Özellikler</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#ekibimiz">Ekibimiz</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#sss">SSS</a></li>
+    <li><a href="file:///C:/Users/hp/Downloads/sketchmath_6.html#iletisim">İletişim</a></li>
   </ul>
 </nav>
 
-<section id="destekcilar">
+<section id="destekcilar" style="background: linear-gradient(135deg, var(--navy) 0%, var(--slate) 100%); padding: 96px 5%;">
   <div class="section-inner">
-    <div class="section-label">Destekleyen Kuruluşlar</div>
-    <h2 class="section-title">Bizi destekleyenler</h2>
-    <p class="section-lead">Sketch Math'in büyümesine katkıda bulunan kurum ve kuruluşları bu alanda paylaşacağız.</p>
-    <div class="supporters-grid">
-      <div class="supporter-card"><div class="supporter-name">Şahinbey Belediyesi</div><div class="supporter-type">Kurumsal Destek</div></div>
-      <div class="supporter-card"><div class="supporter-name">Gaziantep İl Milli Eğitim Müdürlüğü</div><div class="supporter-type">Eğitim Desteği</div></div>
+    <div class="section-label" style="color: var(--accent);">Destekleyen Kuruluşlar</div>
+    <h2 class="section-title" style="color: var(--white);">Bizi destekleyenler</h2>
+    <div class="supporters-grid-new">
+      <div class="supporter-card-new">
+        <div class="supporter-icon">🏛️</div>
+        <div class="supporter-name-new">Şahinbey Belediyesi</div>
+        <div class="supporter-type-new">Kurumsal Destek</div>
+      </div>
+      <div class="supporter-card-new">
+        <div class="supporter-icon">🎓</div>
+        <div class="supporter-name-new">Gaziantep İl Milli Eğitim Müdürlüğü</div>
+        <div class="supporter-type-new">Eğitim Desteği</div>
+      </div>
+      <div class="supporter-card-new">
+        <div class="supporter-icon">🌆</div>
+        <div class="supporter-name-new">Gaziantep Büyükşehir Belediyesi</div>
+        <div class="supporter-type-new">Kurumsal Destek</div>
+      </div>
     </div>
   </div>
 </section>
